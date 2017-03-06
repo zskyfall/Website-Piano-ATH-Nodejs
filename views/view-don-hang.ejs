@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+
+     <a href="/admin"><< Quay Lại Trang Quản Trị </a>
+
+<h2>Thông Tin Đơn Hàng</h2>
+
+<table>
+  <tr>
+    <th>TT</td>
+    <th>Thời Gian Đặt</th>
+    <th>Tên Khách Hàng</th>
+    <th>Email</th>
+    <th>Số Điện Thoại</th>
+    <th>Địa Chỉ Giao Hàng</th>
+    <th>Tên Sản Phẩm</th>
+    <th>Mã Sản Phẩm</th>
+    <th>Link Sản Phẩm</th>
+  </tr>
+  
+ <% for(var i=0;i<donHang.length;i++){ %>
+      <tr>
+        <td> <%= i %> </td>
+        <td><%= donHang[i].time %> </td>
+        <td><%= donHang[i].kh_name %> </td>
+        <td><%= donHang[i].email %> </td>
+        <td><%= donHang[i].phone %> </td>
+        <td><%= donHang[i].address %> </td>
+        <td><%= donHang[i].name %> </td>
+        <td><%= donHang[i].code  %></td>
+        <td><a href="/buy/<%= donHang[i].dan_id %>">CLICK</a> </td>
+        
+
+      </tr>
+ <% } %>
+</table>
+
+</body>
+</html>

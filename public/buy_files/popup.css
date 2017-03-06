@@ -1,0 +1,52 @@
+/*.box {
+    background-color: #FFFFFF;
+    border: 5px solid #888888;
+    color: #888888;
+    height: 330px;
+    left: 100%;
+    padding: 0;
+    position: fixed;
+    right: 30%;
+    top: 25%;
+    width: 498px;
+    z-index: 101;
+}*/
+.box {
+   background-color: none;
+    border: none;
+    color: #888888;
+    height: 333px;
+    padding: 0;
+    position: fixed;
+    right: 30%;
+    top: 15%;
+    width: 500px;
+    z-index: 99999999999999;
+}
+
+.overlay {
+    background: #000000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+	opacity:0.5;
+}
+
+a.boxclose {
+    background: url("../images/close-button.png") repeat scroll left top transparent;
+    cursor: pointer;
+    float: right;
+    height: 26px;
+    left: 16px;
+    position: relative;
+    top: -20px;
+    width: 26px;
+}
+div#boxpopup #content {
+    float: right;
+    margin: -26px 0 0;
+    width: 100%;
+}

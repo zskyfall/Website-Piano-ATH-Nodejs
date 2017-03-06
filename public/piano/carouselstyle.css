@@ -1,0 +1,35 @@
+/* 
+    Document   : carouselstyle
+    Created on : Nov 11, 2011, 2:27:38 PM
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.tvo-carousel{
+    border: none;
+}
+
+.tvoprev{
+    z-index: 5;
+    background: url("../images/prev.png") no-repeat left center !important;
+    width: 20px;
+    border: medium none;
+    color: #b0b2b1;
+    right: 35px;
+	top: 8px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.tvonext{	
+	z-index: 5;
+    background: url("../images/next.png") no-repeat left center !important;
+    width: 20px;
+    border: medium none;
+    color: #b0b2b1;
+    right: 10px; 
+	top: 8px;
+    overflow: hidden;
+    position: absolute;
+}

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ADMIN - PIANO ATH</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/adminlte/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect.
+    -->
+    <link rel="stylesheet" href="/adminlte/css/skins/skin-blue.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <!--
+  BODY TAG OPTIONS:
+  =================
+  Apply one or more of the following classes to get the
+  desired effect
+  |---------------------------------------------------------|
+  | SKINS         | skin-blue                               |
+  |               | skin-black                              |
+  |               | skin-purple                             |
+  |               | skin-yellow                             |
+  |               | skin-red                                |
+  |               | skin-green                              |
+  |---------------------------------------------------------|
+  |LAYOUT OPTIONS | fixed                                   |
+  |               | layout-boxed                            |
+  |               | layout-top-nav                          |
+  |               | sidebar-collapse                        |
+  |               | sidebar-mini                            |
+  |---------------------------------------------------------|
+  -->
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+
+      <!-- Main Header -->
+      <header class="main-header">
+
+        <!-- Logo -->
+        <a href="index2.html" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>A</b>TH</span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>PIANO ATH</b></span>
+        </a>
+
+        <!-- Header Navbar -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu">
+                <!-- Menu toggle button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success">4</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 4 messages</li>
+                  <li>
+                    <!-- inner menu: contains the messages -->
+                    <ul class="menu">
+                      <li><!-- start message -->
+                        <a href="#">
+                          <div class="pull-left">
+                            <!-- User Image -->
+                            <img src="/adminlte/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                          </div>
+                          <!-- Message title and timestamp -->
+                          <h4>
+                            Support Team
+                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                          </h4>
+                          <!-- The message -->
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li><!-- end message -->
+                    </ul><!-- /.menu -->
+                  </li>
+                  <li class="footer"><a href="#">See All Messages</a></li>
+                </ul>
+              </li><!-- /.messages-menu -->
+
+              <!-- Notifications Menu -->
+              <li class="dropdown notifications-menu">
+                <!-- Menu toggle button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-bell-o"></i>
+                  <span class="label label-warning">10</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 10 notifications</li>
+                  <li>
+                    <!-- Inner Menu: contains the notifications -->
+                    <ul class="menu">
+                      <li><!-- start notification -->
+                        <a href="#">
+                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                        </a>
+                      </li><!-- end notification -->
+                    </ul>
+                  </li>
+                  <li class="footer"><a href="#">View all</a></li>
+                </ul>
+              </li>
+              <!-- Tasks Menu -->
+              <li class="dropdown tasks-menu">
+                <!-- Menu Toggle Button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-flag-o"></i>
+                  <span class="label label-danger">9</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 9 tasks</li>
+                  <li>
+                    <!-- Inner menu: contains the tasks -->
+                    <ul class="menu">
+                      <li><!-- Task item -->
+                        <a href="#">
+                          <!-- Task title and progress text -->
+                          <h3>
+                            Design some buttons
+                            <small class="pull-right">20%</small>
+                          </h3>
+                          <!-- The progress bar -->
+                          <div class="progress xs">
+                            <!-- Change the css width attribute to simulate progress -->
+                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                              <span class="sr-only">20% Complete</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li><!-- end task item -->
+                    </ul>
+                  </li>
+                  <li class="footer">
+                    <a href="#">View all tasks</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- User Account Menu -->
+              <li class="dropdown user user-menu">
+                <!-- Menu Toggle Button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <!-- The user image in the navbar-->
+                  <img src="/adminlte/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                  <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                  <span class="hidden-xs">ADMIN</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- The user image in the menu -->
+                  <li class="user-header">
+                    <img src="/adminlte/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <p>
+                      ADMIN - ATH PIANO
+                      <small>Quản trị viên</small>
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+                  <li class="user-body">
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Followers</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Sales</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Friends</a>
+                    </div>
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="#" class="btn btn-default btn-flat">Đăng Xuất</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Control Sidebar Toggle Button -->
+              <li>
+                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+
+          <!-- Sidebar user panel (optional) -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="/adminlte/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+              <p>ADMIN</p>
+              <!-- Status -->
+              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+          </div>
+
+          <!-- search form (Optional) -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+              <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+          <!-- /.search form -->
+
+          <!-- Sidebar Menu -->
+          <ul class="sidebar-menu">
+            <li class="header">HEADER</li>
+            <!-- Optionally, you can add icons to the links -->
+            <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Quản Lý Sản Phẩm</span></a></li>
+            <li><a href="#"><i class="fa fa-link"></i> <span>Thêm Sản Phẩm</span></a></li>
+            <li class="treeview">
+              <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="#">Link in level 2</a></li>
+                <li><a href="#">Link in level 2</a></li>
+              </ul>
+            </li>
+          </ul><!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Trang Quản Trị viên
+            <small>ADMIN</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+            <li class="active">Here</li>
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+
+<!--Thêm sản Phẩm -->
+ <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Thêm Sản Phẩm</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Thêm Sản Phẩm</h4>
+      </div>
+      <div class="modal-body">
+                      <div class="row">
+  <div class="col-xs-12">
+  
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Vui Lòng Điền Đầy đủ thông tin Sản Phẩm</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form" enctype="multipart/form-data" action="/post/add/product" method="post">
+              <div class="box-body">
+
+
+                    <div class="form-group">
+      <label for="name">Tên Sản Phẩm:</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Tên Sản Phẩm">
+    </div>
+     <div class="form-group">
+      <label for="brand">Thương Hiệu:</label>
+      <select name="brand" class="form-control">
+      <option value="Yamaha">Yamaha</option>
+      <option value="KaWai">KaWai</option>
+      <option value="Rolland">Rolland</option>
+      <option value="Casio">Casio</option>
+      <option value="Techinics">Techinics</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Korg">Korg</option>
+      <option value="Khác">Khác...</option>
+    </select><br>
+  
+    </div>
+    <div class="form-group">
+      <label for="category">Thể Loại:</label>
+      <select name="category" class="form-control">
+      <option value="Grand Piano">Grand Piano</option>
+      <option value="Upright Piano">Upright Piano</option>
+      <option value="Đàn Piano Điện">Đàn Piano Điện</option>
+      <option value="Piano Điện Yamaha">Piano Điện Yamaha</option>
+      <option value="Piano Giá Rẻ">Piano Giá Rẻ</option>
+      <option value="Đàn Organ">Đàn Organ</option>
+      <option value="Khác">Khác...</option>
+    </select><br>
+  
+    </div>
+    <div class="form-group">
+      <label for="origin">Nguồn Gốc:</label>
+      <input type="text" class="form-control" id="origin" name="origin" placeholder="Nguồn Gốc">
+    </div>
+     <div class="form-group">
+      <label for="last-price">Giá Cũ:</label>
+      <input type="text" class="form-control" name="last_price" id="last-price" placeholder="Giá Cũ">
+    </div>
+     <div class="form-group">
+      <label for="price">Giá:</label>
+      <input type="text" class="form-control" name="price" id="price" placeholder="Giá (đơn vị VNĐ)">
+    </div>
+     <div class="form-group">
+      <label for="product_code">Mã Sản Phẩm:</label>
+      <input type="text" class="form-control" id="product_code" name="product_code" placeholder="Mã Sản Phẩm">
+    </div>
+    <div class="form-group">
+      <label for="description">Mô Tả Sản Phẩm:</label>
+      <p id="guide-description">(Nếu có nhiều mô tả, hãy ngăn cách chúng bằng dấu phẩy - ",")
+      <input type="text" class="form-control" id="description" name="description" placeholder="Mô Tả Sản Phẩm">
+    </div>
+    <div class="form-group">
+      <label for="parameter">Thông số kỹ thuật:</label>
+      <p id="guide-description">(Nếu có nhiều thông số, hãy ngăn cách chúng bằng dấu phẩy - ",")
+      <input type="text" class="form-control" id="parameter" name="parameter" placeholder="Thông số kỹ thuật">
+    </div>
+    <div class="form-group">
+      <label for="promotion">Khuyến Mại:</label>
+      <input type="text" class="form-control" id="promotion" name="promotion" placeholder="Khuyến Mại">
+    </div>
+     
+    <div class="checkbox">
+      <label><input type="checkbox" name="brand_new"> Hàng mới?</label>
+    </div>
+    <div class="form-group">
+      <input type="file" name="file" id="file" class="form-control" />
+      </div>
+    
+
+
+
+              </div>
+              <!-- /.box-body -->
+
+              <div class="box-footer">
+                <button class="btn btn-primary" type="submit">Thêm Sản Phẩm</button>
+              </div>
+            </form>
+          </div>
+
+  </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- //End Thêm Sản Phẩm -->
+
+
+
+<!--EDIT PRODUCT -->
+
+            
+<!-- Modal -->
+<div id="modal-edit-product" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Chỉnh Sửa Sản Phẩm</h4>
+      </div>
+      <div class="modal-body">
+                      <div class="row">
+  <div class="col-xs-12">
+  
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Vui Lòng Điền Đầy đủ thông tin Sản Phẩm</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form" enctype="multipart/form-data" action="/post/edit/product" method="post">
+              <div class="box-body">
+
+        <input name="edit_id" class="hidden" id="edit_id" value=""/>
+                    <div class="form-group">
+      <label for="name">Tên Sản Phẩm:</label>
+      <input type="text" class="form-control" id="name" name="edit_name" placeholder="Tên Sản Phẩm">
+    </div>
+     <div class="form-group">
+      <label for="brand">Thương Hiệu:</label>
+      <select name="edit_brand" class="form-control">
+      <option value="Yamaha">Yamaha</option>
+      <option value="KaWai">KaWai</option>
+      <option value="Rolland">Rolland</option>
+      <option value="Casio">Casio</option>
+      <option value="Techinics">Techinics</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Korg">Korg</option>
+      <option value="Khác">Khác...</option>
+    </select><br>
+  
+    </div>
+    <div class="form-group">
+      <label for="category">Thể Loại:</label>
+      <select name="edit_category" class="form-control">
+      <option value="Grand Piano">Grand Piano</option>
+      <option value="Upright Piano">Upright Piano</option>
+      <option value="Đàn Piano Điện">Đàn Piano Điện</option>
+      <option value="Piano Điện Yamaha">Piano Điện Yamaha</option>
+      <option value="Piano Giá Rẻ">Piano Giá Rẻ</option>
+      <option value="Đàn Organ">Đàn Organ</option>
+      <option value="Khác">Khác...</option>
+    </select><br>
+  
+    </div>
+    <div class="form-group">
+      <label for="origin">Nguồn Gốc:</label>
+      <input type="text" class="form-control" id="origin" name="edit_origin" placeholder="Nguồn Gốc">
+    </div>
+     <div class="form-group">
+      <label for="last-price">Giá Cũ:</label>
+      <input type="text" class="form-control" name="edit_last_price" id="last-price" placeholder="Giá Cũ">
+    </div>
+     <div class="form-group">
+      <label for="price">Giá:</label>
+      <input type="text" class="form-control" name="edit_price" id="price" placeholder="Giá (đơn vị VNĐ)">
+    </div>
+     <div class="form-group">
+      <label for="product_code">Mã Sản Phẩm:</label>
+      <input type="text" class="form-control" id="product_code" name="edit_product_code" placeholder="Mã Sản Phẩm">
+    </div>
+    <div class="form-group">
+      <label for="description">Mô Tả Sản Phẩm:</label>
+      <p id="guide-description">(Nếu có nhiều mô tả, hãy ngăn cách chúng bằng dấu phẩy - ",")
+      <input type="text" class="form-control" id="description" name="edit_description" placeholder="Mô Tả Sản Phẩm">
+    </div>
+    <div class="form-group">
+      <label for="parameter">Thông số kỹ thuật:</label>
+      <p id="guide-description">(Nếu có nhiều thông số, hãy ngăn cách chúng bằng dấu phẩy - ",")
+      <input type="text" class="form-control" id="parameter" name="edit_parameter" placeholder="Thông số kỹ thuật">
+    </div>
+    <div class="form-group">
+      <label for="promotion">Khuyến Mại:</label>
+      <input type="text" class="form-control" id="promotion" name="edit_promotion" placeholder="Khuyến Mại">
+    </div>
+     
+    <div class="checkbox">
+      <label><input type="checkbox" name="edit_brand_new"> Hàng mới?</label>
+    </div>
+    <div class="form-group">
+      <input type="file" name="file" id="file" class="form-control" />
+      </div>
+    
+
+
+
+              </div>
+              <!-- /.box-body -->
+
+              <div class="box-footer">
+                <button class="btn btn-primary" type="submit">Lưu</button>
+              </div>
+            </form>
+          </div>
+
+  </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- //end EDIT PRODUCT -->
+
+
+
+          <div class="row">
+            <div class="col-xs-12">
+              
+
+              <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Danh mục Sản Phẩm</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap"><div class="row"><div class="col-sm-6"><div class="dataTables_length" id="example1_length"><label>Lọc Theo <select name="category_filter" aria-controls="example1" class="form-control input-sm">
+                  <a href="/admin"><option value="">Tất Cả</option></a>
+                  <option value="Grand Piano">Grand Piano</option><option value="Upright Piano">Upright Piano</option><option value="Khác">Khác</option><option value="Piano Giá Rẻ">Giá Rẻ</option></select> Thể Loại</label></div></div><div class="col-sm-6"><div id="example1_filter" class="dataTables_filter">
+                  <form action="/post/product/search" method="post" name="search_product">
+                  <label>Tìm Kiếm:<div class="input-group margin">
+                <input type="text" class="form-control" name="query">
+                    <span class="input-group-btn">
+                      <button class="btn btn-info btn-flat" type="submit">Tìm!</button>
+                    </span>
+              </div></label>
+              </form>
+
+
+                  </div></div></div><div class="row"><div class="col-sm-12"><table class="table table-bordered table-striped dataTable" id="example1" role="grid" aria-describedby="example1_info">
+                    <thead>
+                      <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 182px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">ID</th><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 182px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Tên Sản Phẩm</th><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 182px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Mã Sản Phẩm</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 223px;" aria-label="Browser: activate to sort column ascending">Thể Loại</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 197px;" aria-label="Platform(s): activate to sort column ascending">Thương Hiệu</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 155px;" aria-label="Engine version: activate to sort column ascending">Xuất Sứ</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 155px;" aria-label="Engine version: activate to sort column ascending">Mô Tả</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 155px;" aria-label="Engine version: activate to sort column ascending">Giá Cũ</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 155px;" aria-label="Engine version: activate to sort column ascending">Giá</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 110px;" aria-label="CSS grade: activate to sort column ascending">Hình Ảnh</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" style="width: 110px;" aria-label="CSS grade: activate to sort column ascending">Chỉnh sửa/Xóa</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                   
+                      
+                      
+                    
+                
+                    </tbody>
+                    
+                  </table></div></div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_simple_numbers" id="example1_paginate">
+
+
+
+                  </div></div></div></div>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </section>
+      </div><!-- /.content-wrapper -->
+
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <!-- To the right -->
+        <div class="pull-right hidden-xs">
+          Anything you want
+        </div>
+        <!-- Default to the left -->
+        <strong>Copyright 2016; <a href="#">PIANO ATH</a>.</strong> All rights reserved.
+      </footer>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+          <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+          <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <!-- Home tab content -->
+          <div class="tab-pane active" id="control-sidebar-home-tab">
+            <h3 class="control-sidebar-heading">Recent Activity</h3>
+            <ul class="control-sidebar-menu">
+              <li>
+                <a href="javascript::;">
+                  <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+                  <div class="menu-info">
+                    <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+                    <p>Will be 23 on April 24th</p>
+                  </div>
+                </a>
+              </li>
+            </ul><!-- /.control-sidebar-menu -->
+
+            <h3 class="control-sidebar-heading">Tasks Progress</h3>
+            <ul class="control-sidebar-menu">
+              <li>
+                <a href="javascript::;">
+                  <h4 class="control-sidebar-subheading">
+                    Custom Template Design
+                    <span class="label label-danger pull-right">70%</span>
+                  </h4>
+                  <div class="progress progress-xxs">
+                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                  </div>
+                </a>
+              </li>
+            </ul><!-- /.control-sidebar-menu -->
+
+          </div><!-- /.tab-pane -->
+          <!-- Stats tab content -->
+          <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div><!-- /.tab-pane -->
+          <!-- Settings tab content -->
+          <div class="tab-pane" id="control-sidebar-settings-tab">
+            <form method="post">
+              <h3 class="control-sidebar-heading">General Settings</h3>
+              <div class="form-group">
+                <label class="control-sidebar-subheading">
+                  Report panel usage
+                  <input type="checkbox" class="pull-right" checked>
+                </label>
+                <p>
+                  Some information about this general settings option
+                </p>
+              </div><!-- /.form-group -->
+            </form>
+          </div><!-- /.tab-pane -->
+        </div>
+      </aside><!-- /.control-sidebar -->
+      <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+      <div class="control-sidebar-bg"></div>
+    </div><!-- ./wrapper -->
+
+    <!-- REQUIRED JS SCRIPTS -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/adminlte/js/app.min.js"></script>
+
+    <!-- Optionally, you can add Slimscroll and FastClick plugins.
+         Both of these plugins are recommended to enhance the
+         user experience. Slimscroll is required when using the
+         fixed layout. -->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('button[name="remove-product"]').click(function(){
+              var product_id = $(this).attr('id');
+              var parent = $(this).parent().parent();    
+
+                  $.ajax({
+                    url : '/remove/product/'+ product_id,
+                    type: 'POST',
+                    dataType: 'text',
+                    data: {admin: true},
+                    success: function(data){
+                      
+                      if(data == 'ok'){
+                        alert(parent.html());
+                        parent.remove();
+                        
+                      }
+                      else{
+                        alert('xoa khong thanh cong');
+                      }
+                    }
+                  });
+            });
+
+
+            $('button[name="edit-product"]').click(function(){
+                var parent = $(this).parent().parent();
+                var id = parent.find('td[id="id"]').text();
+                var name = parent.find('td[id="name"]').text();
+                 var price = parent.find('td[id="price"]').text();
+                  var last_price = parent.find('td[id="last_price"]').text();
+                   var description = parent.find('td[id="description"]').text();
+                    var parameter = parent.find('td[id="parameter"]').text();
+                     var promotion = parent.find('td[id="promotion"]').text();
+                      var origin = parent.find('td[id="origin"]').text();
+                       var product_code = parent.find('td[id="product_code"]').text();
+                $('input[name="edit_id"]').attr('value',id);
+                $('input[name="edit_name"]').val('name');
+                $('input[name="edit_price"]').attr('placeholder',price);
+                $('input[name="edit_last_price"]').attr('placeholder',last_price);
+                $('input[name="edit_description"]').val(description);
+                $('input[name="edit_parameter"]').val(parameter);
+                $('input[name="edit_promotion"]').val(promotion);
+                $('input[name="edit_origin"]').val(origin);
+                $('input[name="edit_product_code"]').val(product_code);
+
+            });
+
+
+        $('select[name="category_filter"]').change(function(){
+              window.location.href = '/'+$(this).val();
+        });
+
+
+
+        });
+    </script>
+
+
+  </body>
+</html>
